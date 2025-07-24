@@ -16,9 +16,9 @@ const Index = () => {
       status: "Completed"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates",
-      tech: ["TypeScript", "Socket.io", "MongoDB", "Express"],
+      title: "Daily Dose",
+      description: "will update soon...",
+      tech: ["TypeScript", "Socket.io", "AWS DynamoDB", "Express"],
       status: "In Progress"
     },
     {
@@ -61,7 +61,7 @@ const Index = () => {
       <section className="py-20 px-6">
         <div className="container mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold text-primary mb-6">
-            Your Name
+            Desola Fujah
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Full Stack Developer crafting digital experiences with passion and precision
