@@ -10,7 +10,7 @@ const Index = () => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "StoreFront",
       description: "Full-stack e-commerce solution with React, Node.js, and PostgreSQL",
       tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
       status: "Completed"
@@ -22,10 +22,10 @@ const Index = () => {
       status: "In Progress"
     },
     {
-      title: "Weather Dashboard",
-      description: "Beautiful weather app with location-based forecasts",
+      title: "New Project",
+      description: "insane project",
       tech: ["React", "API Integration", "Chart.js", "CSS"],
-      status: "Completed"
+      status: "In Progress"
     }
   ];
 
@@ -41,7 +41,7 @@ const Index = () => {
       <header className="sticky top-0 z-50 backdrop-blur-sm bg-background/80 border-b border-border">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-primary">Portfolio</h1>
-          <nav className="hidden md:flex space-x-6">
+          <nav className="flex space-x-6">
             <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
             <a href="#projects" className="text-foreground hover:text-primary transition-colors">Projects</a>
             <a href="#skills" className="text-foreground hover:text-primary transition-colors">Skills</a>
@@ -68,12 +68,12 @@ const Index = () => {
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             software engineer, pool shark, avid music listener
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-brown-dark">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button size="lg" className="w-fit bg-primary hover:bg-brown-dark">
               <Briefcase className="h-5 w-5 mr-2" />
               View My Work
             </Button>
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" className="w-fit">
               <Mail className="h-5 w-5 mr-2" />
               Get In Touch
             </Button>
@@ -87,11 +87,10 @@ const Index = () => {
           <h2 className="text-3xl font-bold text-center mb-12 text-primary">About Me</h2>
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              i'm a passionate full-stack (backend better) developer with over 3 years of experience building 
-              scalable web applications and working on scalable tools and infrastructure to simplify and automate software dependency workflows for complex applications.
+              i'm a passionate full-stack (backend better) developer with over 3 years of experience building scalable web applications and working on scalable tools and infrastructure to simplify and automate software dependency workflows for complex applications.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              i love playing pool and listening to music btw
+              i like pool and listening to music btw
             </p>
           </div>
         </div>
