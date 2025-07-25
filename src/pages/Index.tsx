@@ -87,13 +87,11 @@ const Index = () => {
           <h2 className="text-3xl font-bold text-center mb-12 text-primary">About Me</h2>
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              I'm a passionate full-stack developer with over 3 years of experience building 
-              scalable web applications. I love turning complex problems into simple, 
-              beautiful solutions.
+              i'm a passionate full-stack (backend better) developer with over 3 years of experience building 
+              scalable web applications and working on scalable tools and infrastructure to simplify and automate software dependency workflows for complex applications.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, 
-              contributing to open-source projects, or enjoying a perfect cup of coffee.
+              i love playing pool and listening to music btw
             </p>
           </div>
         </div>
