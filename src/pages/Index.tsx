@@ -18,7 +18,7 @@ const Index = () => {
     {
       title: "Daily Dose",
       description: "will update soon...",
-      tech: ["TypeScript", "Socket.io", "AWS DynamoDB", "Express"],
+      tech: ["Javascript", "AWS DynamoDB", "Express"],
       status: "In Progress"
     },
     {
@@ -34,8 +34,10 @@ const Index = () => {
     "PostgreSQL", "MongoDB", "AWS", "Docker", "Git"
   ];
     return (
+      
     <div className="min-h-screen bg-gradient-to-br from-background via-brown-cream/30 to-secondary">
       {/* Header */}
+
       <header className="sticky top-0 z-50 backdrop-blur-sm bg-background/80 border-b border-border">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-primary">Portfolio</h1>
@@ -64,7 +66,7 @@ const Index = () => {
             Desola Fujah
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Full Stack Developer crafting digital experiences with passion and precision
+            software engineer, pool shark, avid music listener
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-primary hover:bg-brown-dark">
