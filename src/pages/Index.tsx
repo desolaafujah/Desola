@@ -13,7 +13,7 @@ const Index = () => {
     },
     {
       title: "Daily Dose",
-      description: "will update soon...",
+      description: "colorstack winter'24 hackathon project",
       tech: ["Javascript", "AWS DynamoDB", "Express"],
       status: "In Progress"
     },
