@@ -21,7 +21,8 @@ const Index = () => {
       title: "Dependency Upgrader",
       description: "dependency management",
       tech: ["Golang", "Temporal"],
-      status: "In Progress"
+      status: "In Progress",
+      repo: "https://github.com/desolaafujah/DependencyUpgrader",
     }
   ];
 
