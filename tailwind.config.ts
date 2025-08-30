@@ -7,6 +7,10 @@ const config: Config = {
   ],
   theme: {
     extend: {},
+    container: {
+      center: true, // centers the container by default
+      padding: '1.5rem', // default padding, can be overridden
+    },
   },
   plugins: [],
 };

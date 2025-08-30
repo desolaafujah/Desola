@@ -1,13 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { useNavigate } from "react-router-dom";
 import { Mail, Coffee, Code, Briefcase } from "lucide-react";
 
-
 const Index = () => {
-  const navigate = useNavigate();
-
   const projects = [
     {
       title: "StoreFront",
@@ -22,9 +18,9 @@ const Index = () => {
       status: "In Progress"
     },
     {
-      title: "New Project",
-      description: "insane project",
-      tech: ["React", "API Integration", "Chart.js", "CSS"],
+      title: "Dependency Upgrader",
+      description: "dependency management",
+      tech: ["Golang", "Temporal"],
       status: "In Progress"
     }
   ];
@@ -33,13 +29,13 @@ const Index = () => {
     "JavaScript", "TypeScript", "React", "Node.js", "Python",
     "PostgreSQL", "MongoDB", "AWS", "Docker", "Git"
   ];
-    return (
-      
-    <div className="min-h-screen bg-gradient-to-br from-background via-brown-cream/30 to-secondary">
-      {/* Header */}
 
-      <header className="sticky top-0 z-50 backdrop-blur-sm bg-background/80 border-b border-border">
-        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-background via-brown-cream/30 to-secondary flex flex-col items-center">
+      {/* Header */}
+      <header className="sticky top-0 z-50 backdrop-blur-sm bg-background/80 border-b border-border w-full">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
+             style={{ margin: '0 auto', width: '100%', maxWidth: '1200px' }}>
           <h1 className="text-2xl font-bold text-primary">Portfolio</h1>
           <nav className="flex space-x-6">
             <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
@@ -50,7 +46,6 @@ const Index = () => {
           <Button 
             variant="outline" 
             size="sm"
-            onClick={() => navigate('/backroom')}
             className="opacity-30 hover:opacity-100 transition-opacity"
           >
             <Coffee className="h-4 w-4 mr-2" />
@@ -60,8 +55,9 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-6">
-        <div className="container mx-auto text-center">
+      <section className="py-20 px-6 w-full">
+        <div className="max-w-6xl mx-auto text-center"
+             style={{ margin: '0 auto', width: '100%', maxWidth: '1200px' }}>
           <h1 className="text-5xl md:text-7xl font-bold text-primary mb-6">
             Desola Fujah
           </h1>
@@ -82,8 +78,9 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 px-6 bg-card/50">
-        <div className="container mx-auto">
+      <section id="about" className="py-16 px-6 bg-card/50 w-full">
+        <div className="max-w-6xl mx-auto"
+             style={{ margin: '0 auto', width: '100%', maxWidth: '1200px' }}>
           <h2 className="text-3xl font-bold text-center mb-12 text-primary">About Me</h2>
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
@@ -97,8 +94,9 @@ const Index = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-16 px-6">
-        <div className="container mx-auto">
+      <section id="projects" className="py-16 px-6 w-full">
+        <div className="max-w-6xl mx-auto"
+             style={{ margin: '0 auto', width: '100%', maxWidth: '1200px' }}>
           <h2 className="text-3xl font-bold text-center mb-12 text-primary">Featured Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {projects.map((project, index) => (
@@ -130,8 +128,9 @@ const Index = () => {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-16 px-6 bg-card/50">
-        <div className="container mx-auto">
+      <section id="skills" className="py-16 px-6 bg-card/50 w-full">
+        <div className="max-w-6xl mx-auto"
+             style={{ margin: '0 auto', width: '100%', maxWidth: '1200px' }}>
           <h2 className="text-3xl font-bold text-center mb-12 text-primary">Skills</h2>
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-wrap gap-3 justify-center">
@@ -147,8 +146,9 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-6">
-        <div className="container mx-auto text-center">
+      <section id="contact" className="py-16 px-6 w-full">
+        <div className="max-w-6xl mx-auto text-center"
+             style={{ margin: '0 auto', width: '100%', maxWidth: '1200px' }}>
           <h2 className="text-3xl font-bold mb-12 text-primary">Let's Connect</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             I'm always interested in new opportunities and exciting projects. 
@@ -164,10 +164,11 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-6 border-t border-border bg-background">
-        <div className="container mx-auto text-center">
+      <footer className="py-8 px-6 border-t border-border bg-background w-full">
+        <div className="max-w-6xl mx-auto text-center"
+             style={{ margin: '0 auto', width: '100%', maxWidth: '1200px' }}>
           <p className="text-muted-foreground">
-            © 2024 Your Name. Crafted with love and lots of coffee.
+            © 2025 Desola Fujah.
           </p>
         </div>
       </footer>
