@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Coffee, Code, Briefcase } from "lucide-react";
+import { IoLogoGithub } from "react-icons/io"
 
 const Index = () => {
   const projects = [
@@ -9,20 +10,22 @@ const Index = () => {
       title: "StoreFront",
       description: "Full-stack e-commerce solution with React, Node.js, and PostgreSQL",
       tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      status: "Completed"
+      status: "Completed",
+      repo: "https://github.com/desolaafujah/StoreFront"
     },
     {
       title: "Daily Dose",
       description: "colorstack winter'24 hackathon project",
       tech: ["Javascript", "AWS DynamoDB", "Express"],
-      status: "Completed"
+      status: "Completed",
+      repo: "https://github.com/BG-legacy/Daily-Dose"
     },
     {
       title: "Dependency Upgrader",
       description: "dependency management",
       tech: ["Golang", "Temporal"],
       status: "In Progress",
-      repo: "https://github.com/desolaafujah/DependencyUpgrader", // doesn't show on frontend
+      repo: "https://github.com/desolaafujah/DependencyUpgrader",
     }
   ];
 
@@ -97,11 +100,14 @@ const Index = () => {
       {/* Projects Section */}
       <section id="projects" className="py-16 px-6 w-full">
         <div className="max-w-6xl mx-auto"
-             style={{ margin: '0 auto', width: '100%', maxWidth: '1200px' }}>
+            style={{ margin: '0 auto', width: '100%', maxWidth: '1200px'}}>
           <h2 className="text-3xl font-bold text-center mb-12 text-primary">Featured Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {projects.map((project, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-brown-light/20">
+              <Card
+                key={index}
+                className="group relative hover:shadow-lg transition-shadow duration-300 border-brown-light/20"
+              >
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <CardTitle className="text-xl text-primary">{project.title}</CardTitle>
@@ -122,6 +128,22 @@ const Index = () => {
                     ))}
                   </div>
                 </CardContent>
+
+                {/* github icon shadow thing */}
+                {project.repo && (
+                  <a 
+                    href={project.repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute inset-0 flex items-center justify-center
+                                bg-black/40 opacity-0 group-hover:opacity-100
+                                transition-opacity rounded-2xl
+                    "
+                  >
+                    <IoLogoGithub className="h-12 w-12 text-white drop-shadow-lg hover:scale-110 transition-transform"/>
+                  </a>
+                )}
+        
               </Card>
             ))}
           </div>
