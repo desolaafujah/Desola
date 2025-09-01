@@ -69,14 +69,15 @@ const Index = () => {
             software engineer, pool shark, avid music listener
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="w-fit bg-primary hover:bg-brown-dark">
-              <Briefcase className="h-5 w-5 mr-2" />
-              View My Work
-            </Button>
-            <Button variant="outline" size="lg" className="w-fit">
-              <Mail className="h-5 w-5 mr-2" />
-              Get In Touch
-            </Button>
+            <a
+              href="mailto:desolafujah365@gmail.com"
+              className="w-fit"
+            >
+              <Button variant="outline" size="lg" className="w-fit">
+                <Mail className="h-5 w-5 mr-2" />
+                Get In Touch
+              </Button>            
+            </a>
           </div>
         </div>
       </section>
