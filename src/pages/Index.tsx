@@ -35,7 +35,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-brown-cream/30 to-secondary flex flex-col items-center">
+    <div className="min-h-screen bg-gradient-to-br from-cream via-green-light/20 to-brown-light">
       {/* Header */}
       <header className="sticky top-0 z-50 backdrop-blur-sm bg-background/80 border-b border-border w-full">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
@@ -62,7 +62,7 @@ const Index = () => {
       <section className="py-20 px-6 w-full">
         <div className="max-w-6xl mx-auto text-center"
              style={{ margin: '0 auto', width: '100%', maxWidth: '1200px' }}>
-          <h1 className="text-5xl md:text-7xl font-bold text-primary mb-6">
+          <h1 className="text-5xl font-bold text-brown-dark">
             Desola Fujah
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -73,7 +73,7 @@ const Index = () => {
               href="mailto:desolafujah365@gmail.com"
               className="w-fit"
             >
-              <Button variant="outline" size="lg" className="w-fit">
+              <Button variant="outline" size="lg" className="border-brown-medium text-brown-dark hover:bg-brown-light/20">
                 <Mail className="h-5 w-5 mr-2" />
                 Get In Touch
               </Button>            
