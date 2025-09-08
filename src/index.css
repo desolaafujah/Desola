@@ -8,51 +8,51 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Earthy Brown Theme */
-    --background: 35 20% 96%;
-    --foreground: 25 15% 15%;
+    /* Chocolate Brown & Forest Green Theme */
+    --background: 30 15% 97%;
+    --foreground: 25 20% 12%;
 
-    --card: 35 25% 94%;
-    --card-foreground: 25 15% 15%;
+    --card: 30 20% 95%;
+    --card-foreground: 25 20% 12%;
 
-    --popover: 35 25% 94%;
-    --popover-foreground: 25 15% 15%;
+    --popover: 30 20% 95%;
+    --popover-foreground: 25 20% 12%;
 
-    --primary: 25 35% 25%;
-    --primary-foreground: 35 25% 95%;
+    --primary: 25 25% 18%;
+    --primary-foreground: 30 20% 96%;
 
-    --secondary: 30 25% 85%;
-    --secondary-foreground: 25 35% 25%;
+    --secondary: 120 15% 85%;
+    --secondary-foreground: 25 25% 18%;
 
-    --muted: 35 20% 88%;
-    --muted-foreground: 25 15% 45%;
+    --muted: 30 15% 90%;
+    --muted-foreground: 25 15% 40%;
 
-    --accent: 15 45% 65%;
-    --accent-foreground: 25 35% 25%;
+    --accent: 120 25% 45%;
+    --accent-foreground: 30 20% 96%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 35 25% 95%;
+    --destructive-foreground: 30 20% 96%;
 
-    --border: 30 25% 85%;
-    --input: 30 25% 85%;
-    --ring: 25 35% 25%;
+    --border: 120 15% 82%;
+    --input: 120 15% 82%;
+    --ring: 25 25% 18%;
 
-    /* Custom earthy colors */
-    --earth-dark: 20 30% 20%;
-    --earth-medium: 25 25% 35%;
-    --earth-light: 35 30% 75%;
-    --cream: 45 35% 92%;
-    --terracotta: 15 55% 55%;
-    --sage: 95 20% 65%;
+    /* Custom chocolate & forest colors */
+    --chocolate-dark: 25 40% 15%;
+    --chocolate-medium: 30 30% 25%;
+    --chocolate-light: 35 25% 65%;
+    --cream: 45 25% 94%;
+    --forest-green: 120 35% 35%;
+    --sage-green: 110 20% 65%;
     
     /* Gradients */
-    --gradient-earth: linear-gradient(135deg, hsl(var(--earth-dark)), hsl(var(--earth-medium)));
-    --gradient-warm: linear-gradient(180deg, hsl(var(--cream)), hsl(var(--earth-light)));
-    --gradient-sunset: linear-gradient(135deg, hsl(var(--terracotta)), hsl(var(--accent)));
+    --gradient-earth: linear-gradient(135deg, hsl(var(--chocolate-dark)), hsl(var(--chocolate-medium)));
+    --gradient-warm: linear-gradient(180deg, hsl(var(--cream)), hsl(var(--chocolate-light)));
+    --gradient-forest: linear-gradient(135deg, hsl(var(--forest-green)), hsl(var(--sage-green)));
     
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(var(--earth-dark) / 0.1);
-    --shadow-warm: 0 8px 30px -8px hsl(var(--terracotta) / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(var(--chocolate-dark) / 0.12);
+    --shadow-warm: 0 8px 30px -8px hsl(var(--forest-green) / 0.25);
     
     /* Animations */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -78,42 +78,42 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark Earthy Theme */
-    --background: 20 25% 8%;
-    --foreground: 35 25% 95%;
+    /* Dark Chocolate & Forest Theme */
+    --background: 25 30% 6%;
+    --foreground: 30 20% 96%;
 
-    --card: 20 25% 10%;
-    --card-foreground: 35 25% 95%;
+    --card: 25 25% 8%;
+    --card-foreground: 30 20% 96%;
 
-    --popover: 20 25% 10%;
-    --popover-foreground: 35 25% 95%;
+    --popover: 25 25% 8%;
+    --popover-foreground: 30 20% 96%;
 
-    --primary: 35 25% 95%;
-    --primary-foreground: 25 35% 25%;
+    --primary: 30 20% 96%;
+    --primary-foreground: 25 25% 18%;
 
-    --secondary: 25 20% 18%;
-    --secondary-foreground: 35 25% 95%;
+    --secondary: 120 20% 15%;
+    --secondary-foreground: 30 20% 96%;
 
-    --muted: 25 20% 15%;
-    --muted-foreground: 35 15% 65%;
+    --muted: 25 20% 12%;
+    --muted-foreground: 30 15% 70%;
 
-    --accent: 15 45% 65%;
-    --accent-foreground: 25 35% 25%;
+    --accent: 120 30% 50%;
+    --accent-foreground: 25 25% 18%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 35 25% 95%;
+    --destructive-foreground: 30 20% 96%;
 
-    --border: 25 20% 18%;
-    --input: 25 20% 18%;
-    --ring: 35 25% 95%;
+    --border: 120 20% 15%;
+    --input: 120 20% 15%;
+    --ring: 30 20% 96%;
     
-    /* Dark mode earthy colors */
-    --earth-dark: 15 30% 12%;
-    --earth-medium: 20 25% 25%;
-    --earth-light: 30 20% 45%;
-    --cream: 40 20% 85%;
-    --terracotta: 15 45% 45%;
-    --sage: 95 15% 55%;
+    /* Dark mode chocolate & forest colors */
+    --chocolate-dark: 25 35% 8%;
+    --chocolate-medium: 30 25% 20%;
+    --chocolate-light: 35 20% 50%;
+    --cream: 45 15% 85%;
+    --forest-green: 120 30% 25%;
+    --sage-green: 110 15% 55%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

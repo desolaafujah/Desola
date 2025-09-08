@@ -47,15 +47,15 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Earthy color palette
-        earth: {
-          dark: "hsl(var(--earth-dark))",
-          medium: "hsl(var(--earth-medium))",
-          light: "hsl(var(--earth-light))",
+        // Chocolate & Forest color palette
+        chocolate: {
+          dark: "hsl(var(--chocolate-dark))",
+          medium: "hsl(var(--chocolate-medium))",
+          light: "hsl(var(--chocolate-light))",
         },
         cream: "hsl(var(--cream))",
-        terracotta: "hsl(var(--terracotta))",
-        sage: "hsl(var(--sage))",
+        forest: "hsl(var(--forest-green))",
+        sage: "hsl(var(--sage-green))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -70,7 +70,7 @@ export default {
       backgroundImage: {
         'gradient-earth': 'var(--gradient-earth)',
         'gradient-warm': 'var(--gradient-warm)',
-        'gradient-sunset': 'var(--gradient-sunset)',
+        'gradient-forest': 'var(--gradient-forest)',
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',

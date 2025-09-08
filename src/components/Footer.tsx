@@ -14,7 +14,7 @@ const Footer = () => {
           
           <div className="border-t border-primary-foreground/20 pt-8">
             <p className="text-primary-foreground/60 flex items-center justify-center gap-2">
-              Built with <Heart className="w-4 h-4 text-terracotta fill-current" /> and curiosity
+              Built with <Heart className="w-4 h-4 text-forest fill-current" /> and curiosity
             </p>
             <p className="text-primary-foreground/60 text-sm mt-2">
               © 2024 Desola Fujah. All layers included.

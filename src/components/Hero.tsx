@@ -26,7 +26,7 @@ const Hero = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight">
               Desola Fujah
             </h1>
-            <div className="h-1 w-24 bg-terracotta mx-auto rounded-full"></div>
+            <div className="h-1 w-24 bg-forest mx-auto rounded-full"></div>
           </div>
 
           <p className="text-xl md:text-2xl text-primary-foreground/90 font-light leading-relaxed max-w-2xl mx-auto">
@@ -37,7 +37,7 @@ const Hero = () => {
             <Button 
               variant="secondary"
               size="lg"
-              className="bg-cream text-earth-dark hover:bg-cream/90 transition-all duration-300 shadow-warm px-8 py-3"
+              className="bg-cream text-chocolate-dark hover:bg-cream/90 transition-all duration-300 shadow-warm px-8 py-3"
               onClick={() => document.getElementById("writing")?.scrollIntoView({ behavior: "smooth" })}
             >
               Read My Stories
@@ -45,7 +45,7 @@ const Hero = () => {
             <Button 
               variant="outline"
               size="lg"
-              className="border-2 border-cream text-cream hover:bg-cream hover:text-earth-dark transition-all duration-300 px-8 py-3"
+              className="border-2 border-cream text-cream hover:bg-cream hover:text-chocolate-dark transition-all duration-300 px-8 py-3"
               asChild
             >
               <a href="mailto:desolafujah365@gmail.com">

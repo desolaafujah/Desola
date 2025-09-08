@@ -36,7 +36,7 @@ const Projects = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
             Built with Purpose
           </h2>
-          <div className="h-1 w-16 bg-terracotta mx-auto rounded-full mb-8"></div>
+          <div className="h-1 w-16 bg-forest mx-auto rounded-full mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Each project represents a problem I wanted to solve, a skill I wanted to learn, 
             or a challenge I was ready to take on.
@@ -54,14 +54,14 @@ const Projects = () => {
                   className={`text-xs font-bold px-3 py-1 rounded-full ${
                     project.status === "Completed" 
                       ? "text-sage bg-sage/10" 
-                      : "text-terracotta bg-terracotta/10"
+                      : "text-forest bg-forest/10"
                   }`}
                 >
                   {project.status}
                 </span>
               </div>
 
-              <h3 className="text-xl font-semibold text-primary mb-3 group-hover:text-terracotta transition-colors duration-300">
+              <h3 className="text-xl font-semibold text-primary mb-3 group-hover:text-forest transition-colors duration-300">
                 {project.title}
               </h3>
 
@@ -84,7 +84,7 @@ const Projects = () => {
                 <Button 
                   variant="outline" 
                   size="sm"
-                  className="flex-1 border-earth-medium text-earth-medium hover:bg-earth-medium hover:text-white transition-all duration-300"
+                  className="flex-1 border-chocolate-medium text-chocolate-medium hover:bg-chocolate-medium hover:text-white transition-all duration-300"
                   asChild
                 >
                   <a href={project.github} className="flex items-center justify-center">

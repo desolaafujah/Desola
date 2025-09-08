@@ -8,7 +8,7 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
             The Layers of Me
           </h2>
-          <div className="h-1 w-16 bg-terracotta mx-auto rounded-full mb-8"></div>
+          <div className="h-1 w-16 bg-forest mx-auto rounded-full mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             There are so many layers to who we are, and I'm just beginning to unpack mine through writing.
           </p>
@@ -16,7 +16,7 @@ const About = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-card p-8 rounded-lg shadow-soft border border-border/50 hover:shadow-warm transition-all duration-300">
-            <div className="w-12 h-12 bg-gradient-sunset rounded-lg flex items-center justify-center mb-6">
+            <div className="w-12 h-12 bg-gradient-forest rounded-lg flex items-center justify-center mb-6">
               <Code className="w-6 h-6 text-primary-foreground" />
             </div>
             <h3 className="text-xl font-semibold text-primary mb-4">The Engineer</h3>
@@ -27,7 +27,7 @@ const About = () => {
           </div>
 
           <div className="bg-card p-8 rounded-lg shadow-soft border border-border/50 hover:shadow-warm transition-all duration-300">
-            <div className="w-12 h-12 bg-gradient-sunset rounded-lg flex items-center justify-center mb-6">
+            <div className="w-12 h-12 bg-gradient-forest rounded-lg flex items-center justify-center mb-6">
               <Heart className="w-6 h-6 text-primary-foreground" />
             </div>
             <h3 className="text-xl font-semibold text-primary mb-4">The Human</h3>
@@ -38,7 +38,7 @@ const About = () => {
           </div>
 
           <div className="bg-card p-8 rounded-lg shadow-soft border border-border/50 hover:shadow-warm transition-all duration-300">
-            <div className="w-12 h-12 bg-gradient-sunset rounded-lg flex items-center justify-center mb-6">
+            <div className="w-12 h-12 bg-gradient-forest rounded-lg flex items-center justify-center mb-6">
               <Layers className="w-6 h-6 text-primary-foreground" />
             </div>
             <h3 className="text-xl font-semibold text-primary mb-4">The Storyteller</h3>

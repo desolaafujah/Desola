@@ -33,7 +33,7 @@ const Writing = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
             Words in Progress
           </h2>
-          <div className="h-1 w-16 bg-terracotta mx-auto rounded-full mb-8"></div>
+          <div className="h-1 w-16 bg-forest mx-auto rounded-full mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             I'm learning to translate thoughts into words, experiences into stories. 
             Here's where I practice the art of being human through writing.
@@ -47,7 +47,7 @@ const Writing = () => {
               className="bg-card p-6 rounded-lg shadow-soft border border-border/50 hover:shadow-warm transition-all duration-300 cursor-pointer group"
             >
               <div className="flex items-center justify-between mb-4">
-                <span className="text-sm font-medium text-terracotta bg-terracotta/10 px-3 py-1 rounded-full">
+                <span className="text-sm font-medium text-forest bg-forest/10 px-3 py-1 rounded-full">
                   {piece.category}
                 </span>
                 {piece.isNew && (
@@ -57,7 +57,7 @@ const Writing = () => {
                 )}
               </div>
               
-              <h3 className="text-xl font-semibold text-primary mb-3 group-hover:text-terracotta transition-colors duration-300">
+              <h3 className="text-xl font-semibold text-primary mb-3 group-hover:text-forest transition-colors duration-300">
                 {piece.title}
               </h3>
               
@@ -70,7 +70,7 @@ const Writing = () => {
                   <Clock className="w-4 h-4 mr-2" />
                   {piece.readTime}
                 </div>
-                <div className="flex items-center text-terracotta group-hover:translate-x-1 transition-transform duration-300">
+                <div className="flex items-center text-forest group-hover:translate-x-1 transition-transform duration-300">
                   <span className="text-sm font-medium mr-1">Read</span>
                   <ArrowRight className="w-4 h-4" />
                 </div>
@@ -81,7 +81,7 @@ const Writing = () => {
 
         <div className="text-center">
           <div className="bg-gradient-warm p-8 md:p-12 rounded-2xl border border-border/50 max-w-2xl mx-auto">
-            <FileText className="w-12 h-12 text-terracotta mx-auto mb-6" />
+            <FileText className="w-12 h-12 text-forest mx-auto mb-6" />
             <h3 className="text-2xl font-semibold text-primary mb-4">
               More Stories Coming Soon
             </h3>
@@ -91,7 +91,7 @@ const Writing = () => {
             </p>
             <Button 
               variant="outline"
-              className="border-terracotta text-terracotta hover:bg-terracotta hover:text-white transition-all duration-300"
+              className="border-forest text-forest hover:bg-forest hover:text-white transition-all duration-300"
             >
               Subscribe for Updates
             </Button>
