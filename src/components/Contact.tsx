@@ -31,7 +31,7 @@ const Contact = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Let's Connect
+            we should probably talk
           </h2>
           <div className="h-1 w-16 bg-forest mx-auto rounded-full mb-8"></div>
           <p className="text-xl text-muted-foreground leading-relaxed">

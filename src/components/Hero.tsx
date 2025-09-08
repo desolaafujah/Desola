@@ -49,8 +49,9 @@ const Hero = () => {
               asChild
             >
               <a href="mailto:desolafujah365@gmail.com">
-                <Mail className="w-4 h-4 mr-2" />
-                Get In Touch
+                {/* need to switch this to my future llm page */}
+                <Mail className="w-4 h-4 mr-2" /> 
+                secret ai thingy
               </a>
             </Button>
           </div>

@@ -19,21 +19,20 @@ const About = () => {
             <div className="w-12 h-12 bg-gradient-forest rounded-lg flex items-center justify-center mb-6">
               <Code className="w-6 h-6 text-primary-foreground" />
             </div>
-            <h3 className="text-xl font-semibold text-primary mb-4">The Engineer</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              3+ years building scalable web applications and infrastructure. I love solving complex problems 
-              and creating tools that make developers' lives easier.
-            </p>
+            <h3 className="text-xl font-semibold text-primary mb-4">engineer</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                growing up, i've always wanted to be some type of artist. wasn't very good at drawing
+                but i found coding to be my way to <i>art</i>.
+              </p>
           </div>
 
           <div className="bg-card p-8 rounded-lg shadow-soft border border-border/50 hover:shadow-warm transition-all duration-300">
             <div className="w-12 h-12 bg-gradient-forest rounded-lg flex items-center justify-center mb-6">
               <Heart className="w-6 h-6 text-primary-foreground" />
             </div>
-            <h3 className="text-xl font-semibold text-primary mb-4">The Human</h3>
+            <h3 className="text-xl font-semibold text-primary mb-4">human</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Pool enthusiast, music lover, and someone who believes in the power of authentic connections. 
-              I find joy in the simple moments between the big achievements.
+              trying disciple, pool enthuasist, music lover. i value authentic connections. i like brown a lot
             </p>
           </div>
 
@@ -41,27 +40,27 @@ const About = () => {
             <div className="w-12 h-12 bg-gradient-forest rounded-lg flex items-center justify-center mb-6">
               <Layers className="w-6 h-6 text-primary-foreground" />
             </div>
-            <h3 className="text-xl font-semibold text-primary mb-4">The Storyteller</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              I'm discovering that there are stories within me waiting to be told. Writing is becoming 
-              my way of exploring the depths of experience and connection.
-            </p>
+            <h3 className="text-xl font-semibold text-primary mb-4">storyteller?</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                i come from a big family of storytellers and writers. it's funny because i never considered myself to be a reader or writer. growing up, reading wasn't something i enjoyed and i only wrote when i had to.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                but getting older (and wiser), i've decided to give myself an outlet (apart from God) to properly process my thoughts across many different topics. this actually might be fun.
+              </p>
           </div>
         </div>
 
         <div className="bg-primary/5 p-8 md:p-12 rounded-2xl border border-border/50">
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-2xl md:text-3xl font-semibold text-primary mb-6">
-              Beyond the Code
+              beyond all of this
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              While I've spent years perfecting my craft as a developer, I'm realizing there's so much more to explore. 
-              Writing has become my new frontier—a place where I can process experiences, share insights, and connect 
-              with others on a deeper level.
+              i've spent many years finding my around using tech to amplify a tiny voice i have in my head. writing isn't something i've ever thought i'd be into 
+              given that i'm not even that much of a reader, but a dear friend once told me that they valued my perspective of the world. this is gonna be fun.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              This website is evolving, just like me. It's a space where technical expertise meets human storytelling, 
-              where the analytical meets the emotional, where all the layers come together to form something whole.
+              this website is steadily evolving. a space where technical expertise meets the reflective. it's so many layers to this.
             </p>
           </div>
         </div>
