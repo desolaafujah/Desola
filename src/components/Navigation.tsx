@@ -8,7 +8,7 @@ const Navigation = () => {
     { name: "About", href: "#about" },
     { name: "Writing", href: "#writing" },
     { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", href: "mailto:desolafujah365@gmail.com"},
   ];
 
   return (

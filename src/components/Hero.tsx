@@ -40,7 +40,7 @@ const Hero = () => {
               className="bg-cream text-chocolate-dark hover:bg-cream/90 transition-all duration-300 shadow-warm px-8 py-3"
               onClick={() => document.getElementById("writing")?.scrollIntoView({ behavior: "smooth" })}
             >
-              Read My Stories
+              read words
             </Button>
             <Button 
               variant="outline"
@@ -51,7 +51,7 @@ const Hero = () => {
               <a href="mailto:desolafujah365@gmail.com">
                 {/* need to switch this to my future llm page */}
                 <Mail className="w-4 h-4 mr-2" /> 
-                secret ai thingy
+                secret ai thing
               </a>
             </Button>
           </div>
