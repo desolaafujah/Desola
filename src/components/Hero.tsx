@@ -1,6 +1,6 @@
 import { ArrowDown, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroBackground from "@/assets/hero-background.jpg";
+import heroBackground from "@/assets/calmbrown.png";
 
 const Hero = () => {
   const scrollToNext = () => {
