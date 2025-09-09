@@ -5,26 +5,26 @@ const Projects = () => {
   const projects = [
     {
       title: "StoreFront",
-      description: "Full-stack e-commerce solution with React, Node.js, and PostgreSQL",
+      description: "throwback to first ever fullstack project built in team setting",
       status: "Completed",
       technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/desolaafujah/StoreFront",
+      live: null,
     },
     {
       title: "Daily Dose",
       description: "ColorStack winter'24 hackathon project",
       status: "Completed",
       technologies: ["JavaScript", "AWS DynamoDB", "Express"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/BG-legacy/Daily-Dose",
+      live: "https://daily-dose.me",
     },
     {
       title: "Dependency Upgrader",
       description: "Dependency management tool for complex applications",
       status: "In Progress",
       technologies: ["Golang", "Temporal"],
-      github: "#",
+      github: "https://github.com/desolaafujah/DependencyUpgrader",
       live: null,
     },
   ];
@@ -34,12 +34,11 @@ const Projects = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Built with Purpose
+            my artwork
           </h2>
           <div className="h-1 w-16 bg-forest mx-auto rounded-full mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Each project represents a problem I wanted to solve, a skill I wanted to learn, 
-            or a challenge I was ready to take on.
+            stuff brought to life (or attempted to)
           </p>
         </div>
 
@@ -111,9 +110,9 @@ const Projects = () => {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-6">
-            Want to see more of my technical work?
-          </p>
+          {/* <p className="text-muted-foreground mb-6">
+            i should probably just have have my projects on here
+          </p> */}
           <Button 
             variant="outline"
             size="lg"
@@ -122,7 +121,7 @@ const Projects = () => {
           >
             <a href="https://github.com/desolaafujah">
               <Github className="w-5 h-5 mr-2" />
-              View All on GitHub
+              github profile
             </a>
           </Button>
         </div>

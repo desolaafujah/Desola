@@ -6,9 +6,10 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="mb-8">
-            <h3 className="text-2xl font-bold mb-2">Desola Fujah</h3>
+            <h3 className="text-2xl font-bold mb-2">study the bible🥹</h3>
+            {/* have link maybe ? */}
             <p className="text-primary-foreground/80">
-              Software engineer discovering the art of storytelling
+              <i>John 8:12 - "No one, sir," she said. Then neither do I condemn you," Jesus declared. "Go now and leave your life of sin"</i>
             </p>
           </div>
           
@@ -17,7 +18,7 @@ const Footer = () => {
               Built with <Heart className="w-4 h-4 text-forest fill-current" /> and curiosity
             </p>
             <p className="text-primary-foreground/60 text-sm mt-2">
-              © 2024 Desola Fujah. All layers included.
+              © 2025 Desola Fujah. shhh.
             </p>
           </div>
         </div>

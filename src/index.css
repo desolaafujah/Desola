@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
@@ -132,11 +135,41 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* default */
   }
+
   
   h1, h2, h3, h4, h5, h6 {
     font-family: inherit;
   }
+
+  .comment-bubble {
+  position: relative;
+  background-color: hsl(var(--forest-green));
+  color: hsl(var(--primary-foreground));
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  display: inline-block;
+  }
+
+  .comment-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -6px; /* positions the tail */
+    left: 20px;   /* adjust horizontally */
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: hsl(var(--forest-green)) transparent transparent transparent;
+  }
+
+  .comment-bubble {
+    transition: var(--transition-bounce);
+    transform: scale(0.95);
+  }
+  .comment-bubble:hover {
+    transform: scale(1);
+  }
+
 }

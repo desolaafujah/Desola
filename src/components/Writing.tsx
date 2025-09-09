@@ -35,8 +35,7 @@ const Writing = () => {
           </h2>
           <div className="h-1 w-16 bg-forest mx-auto rounded-full mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I'm learning to translate thoughts into words, experiences into stories. 
-            Here's where I practice the art of being human through writing.
+            i think a lot so getting into the habit of writing (again) would probably help me
           </p>
         </div>
 
@@ -77,25 +76,6 @@ const Writing = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center">
-          <div className="bg-gradient-warm p-8 md:p-12 rounded-2xl border border-border/50 max-w-2xl mx-auto">
-            <FileText className="w-12 h-12 text-forest mx-auto mb-6" />
-            <h3 className="text-2xl font-semibold text-primary mb-4">
-              More Stories Coming Soon
-            </h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              I'm actively working on more pieces that explore the intersections of technology, 
-              human experience, and the stories that connect us all.
-            </p>
-            <Button 
-              variant="outline"
-              className="border-forest text-forest hover:bg-forest hover:text-white transition-all duration-300"
-            >
-              Subscribe for Updates
-            </Button>
-          </div>
         </div>
       </div>
     </section>
