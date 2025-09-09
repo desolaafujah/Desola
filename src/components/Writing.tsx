@@ -4,24 +4,24 @@ import { Button } from "@/components/ui/button";
 const Writing = () => {
   const writingPieces = [
     {
-      title: "On Beginnings",
-      excerpt: "There's something magical about starting something new, even when you don't know where it will lead...",
+      title: "something strange was always in the air",
+      excerpt: "my experience in nyc",
       readTime: "3 min read",
-      category: "Reflection",
+      category: "reflection",
       isNew: true,
     },
     {
-      title: "The Space Between Code and Words",
-      excerpt: "As a developer, I've learned to speak in logic and functions. But what happens when we need to speak in feelings?",
-      readTime: "5 min read",
-      category: "Technology & Life",
+      title: "dependency management",
+      excerpt: "i have a growing interest in dependency management",
+      readTime: "2 min read",
+      category: "tech",
       isNew: false,
     },
     {
-      title: "Layers",
-      excerpt: "We are not single stories. We are collections of moments, decisions, and discoveries that build upon each other...",
-      readTime: "4 min read",
-      category: "Personal",
+      title: "underneath",
+      excerpt: "a deep reflection",
+      readTime: "30 s read",
+      category: "personal",
       isNew: true,
     },
   ];
