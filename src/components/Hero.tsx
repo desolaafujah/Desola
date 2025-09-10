@@ -1,8 +1,10 @@
 import { ArrowDown, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBackground from "@/assets/calmbrown.png";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   const scrollToNext = () => {
     const nextSection = document.getElementById("about");
     nextSection?.scrollIntoView({ behavior: "smooth" });
@@ -42,17 +44,13 @@ const Hero = () => {
             >
               read words
             </Button>
-            <Button 
-              variant="outline"
-              size="lg"
-              className="border-2 border-cream text-cream hover:bg-cream hover:text-chocolate-dark transition-all duration-300 px-8 py-3"
-              asChild
-            >
-              <a href="mailto:desolafujah365@gmail.com">
-                {/* need to switch this to my future llm page */}
-                <Mail className="w-4 h-4 mr-2" /> 
-                secret ai thing
-              </a>
+            <Button
+                  variant="ghost"
+                  onClick={() => navigate("/password-page")}
+                  className="flex items-center text-brown-cream hover:text-white hover:bg-brown-medium/20"
+                >
+                  <Mail className="w-4 h-4 mr-2" /> 
+                  secret ai thing
             </Button>
           </div>
         </div>
@@ -72,3 +70,9 @@ const Hero = () => {
 };
 
 export default Hero;
+
+// secret button css
+// variant="outline"
+//               size="lg"
+//               className="border-2 border-cream text-cream hover:bg-cream hover:text-chocolate-dark transition-all duration-300 px-8 py-3"
+//               asChild
