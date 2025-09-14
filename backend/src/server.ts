@@ -1,9 +1,12 @@
-import express from "express";
+import express, {Request, Response } from "express";
 import cors from "cors";
 import nodemailer from "nodemailer";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
-const PORT = 5001;
+const PORT = process.env.PORT || 5001;
 
 // parse JSON
 app.use(express.json());
@@ -11,7 +14,10 @@ app.use(express.json());
 // CORS middleware
 app.use(
   cors({
-    origin: "http://localhost:8080",
+    origin: [
+      "http://localhost:8080",
+      "https://www.desolafujah.com",
+    ],
     methods: ["GET", "POST", "OPTIONS"],
     allowedHeaders: ["Content-Type"],
     credentials: true, // optional, if sending cookies
@@ -22,20 +28,20 @@ app.use(
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "desolafujah365@gmail.com",
-    pass: "zezl twzi ivtx yfsm",
+    user: "process.env.EMAIL_USER",
+    pass: "process.env.EMAIL_PASS",
   },
 });
 
 // Endpoint
-app.post("/api/send-name", async (req, res) => {
+app.post("/api/send-name", async (req: Request, res: Response) => {
   const { name } = req.body;
   if (!name) return res.status(400).json({ error: "Name is required" });
 
   try {
     await transporter.sendMail({
-      from: "your_email@gmail.com",
-      to: "desolafujah365@gmail.com",
+      from: "process.env.EMAIL_USER",
+      to: "process.env.RECEIVING_EMAIL || process.env.EMAIL_USER",
       subject: "Someone entered their name!",
       text: `Name: ${name}`,
     });
