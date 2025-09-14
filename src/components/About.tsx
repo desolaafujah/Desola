@@ -36,10 +36,14 @@ const About = () => {
                 {/* underline and when clicked, takes them to ella mai trying vid OMG */}
                 <u style={{ textDecoration: "underline dotted" }}><a href="https://www.youtube.com/watch?v=Hxb6WmvaGhk&lis">trying</a></u> <u style={{ textDecoration: "underline dotted" }}><a href="https://www.google.com/search?q=disciple+of+christ&rlz=1C5OZZY_enUS1169US1169&oq=disciple+of+christ&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyCggBEC4Y1AIYgAQyCggCEC4Y1AIYgAQyDQgDEC4YxwEY0QMYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEC4YgATSAQg2MDY1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8">disciple</a></u>, <u style={{ textDecoration: "underline dotted" }}><a href="https://en.wikipedia.org/wiki/Pool_(cue_sports)">pool</a></u> enthusiast, music lover. i value authentic connections. i like brown a lot. 
                 i'm also the type of person that would literally do anything. wanna jump off a cliff into a lake? 
-                <span className="relative group inline-block cursor-pointer">
-                  <u style={{ textDecoration: "underline dotted" }}>i just might be down!</u>
-                  <div className="absolute left-0 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200">
-                    <div className="comment-bubble bg-[hsl(var(--forest-green))] text-white px-3 py-2 rounded-lg shadow-soft">
+                <span className="relative group inline-block">
+                   
+                      <a href='#' className="text-inherit hover:underline hover:decoration-dotted hover:cursor-pointer transition duration-200">
+                          i just might be down!
+                      </a>
+                  
+                  <div className="absolute -top-8 left-full ml-2 hidden group-hover:block z-10">
+                    <div className="bg-[hsl(var(--forest-green))] text-white text-xs px-2 py-1 rounded-full shadow-md whitespace-nowrap">
                       <p>keyword: "might"</p>
                     </div>
                   </div>
