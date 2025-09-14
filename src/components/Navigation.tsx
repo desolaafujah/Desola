@@ -5,10 +5,10 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "About", href: "#about" },
-    { name: "Writing", href: "#writing" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "mailto:desolafujah365@gmail.com"},
+    { name: "about", href: "#about" },
+    { name: "writing", href: "#writing" },
+    { name: "projects", href: "#projects" },
+    { name: "contact", href: "mailto:desolafujah365@gmail.com"},
   ];
 
   return (
