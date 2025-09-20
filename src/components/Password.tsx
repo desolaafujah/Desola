@@ -9,7 +9,7 @@ const PasswordPage: React.FC = () => {
   const [sendEmail, setSendEmail] = useState<boolean>(false);
   const [error, setError] = useState<string>("");
 
-  const correctPassword = "letmein"; // replace with your password
+  const correctPassword = "letmein"; 
   const formData = new URLSearchParams();
   formData.append("name", name);
 
@@ -28,7 +28,7 @@ const PasswordPage: React.FC = () => {
             await fetch("http://localhost:5001/api/send-name", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json", // explicitly JSON
+                "Content-Type": "application/json",
             },
             body: JSON.stringify({ name }),
             });
@@ -37,7 +37,7 @@ const PasswordPage: React.FC = () => {
         }
     }
 
-    navigate("/llm"); // your LLM page route
+    navigate("/llm"); //llm page
   };
 
   return (

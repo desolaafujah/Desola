@@ -14,6 +14,18 @@ export default {
     },
     extend: {
       colors: {
+        brown: {
+          50: '#fdf8f6',
+          100: '#f5eae3',
+          200: '#e8d1c3',
+          300: '#d9b59e',
+          400: '#c18e6c',
+          500: '#a16c4f', // nice mid brown
+          600: '#84543f',
+          700: '#6a4333',
+          800: '#4d2d22',
+          900: '#2f1a14',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -86,6 +98,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+
         "accordion-down": {
           from: {
             height: "0",
@@ -102,10 +115,15 @@ export default {
             height: "0",
           },
         },
+        "gradient-x": {
+          "0%, 100%" : { "background-position" : "0% 50%"},
+          "50%": { "background-position": "100% 50%"},
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        'gradient-x': 'gradient-x 10s ease infinite'
       },
     },
   },

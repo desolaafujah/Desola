@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
 
           <p className="text-xl md:text-2xl text-primary-foreground/90 font-light leading-relaxed max-w-2xl mx-auto">
-           coder, storyteller in progress, and believer.
+           coder, writer under construction, and believer.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
