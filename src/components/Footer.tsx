@@ -79,7 +79,7 @@ const Footer = () => {
                   className="flex items-center gap-2 px-3 py-1 rounded-full bg-green-600/10 text-green-500 border border-green-600/30 hover:bg-green-600/20 transition"
                 >
                   <span className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span>
-                  currently building
+                  online
                 </a>
               ) : (
                 <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-gray-600/10 text-gray-400 border border-gray-600/30">

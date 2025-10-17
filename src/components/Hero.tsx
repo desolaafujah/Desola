@@ -57,12 +57,12 @@ const Hero = () => {
 
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <button 
+          {/* <button 
             onClick={scrollToNext}
             className="animate-bounce text-primary-foreground/70 hover:text-primary-foreground transition-colors duration-300"
           >
             <ArrowDown size={32} />
-          </button>
+          </button> */}
         </div>
       </div>
     </section>
