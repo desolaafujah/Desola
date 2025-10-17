@@ -11,7 +11,7 @@ const About = () => {
           <div className="h-1 w-16 bg-forest mx-auto rounded-full mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             <i>Proverbs 23:7a - For as he thinketh in his heart, so is he</i>
-            the heart has everything passion, desire and emotion. mine lies within these categories
+            <p>the heart has everything passion, desire and emotion. mine lies within these categories</p>
           </p>
         </div>
 

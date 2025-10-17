@@ -1,6 +1,53 @@
 import { Heart } from "lucide-react";
+import {useEffect, useState} from 'react'
+
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5020";
+
+const res = await fetch(`${API_BASE}/currently-building`);
+
+
+type BuildStatus = {
+  repo: string;
+  url: string;
+  timestamp: string;
+  daysAgo: number;
+} | null;
 
 const Footer = () => {
+  const [status, setStatus] = useState<BuildStatus>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const getStatus = async () => {
+      try{
+        const res = await fetch(`${API_BASE}/currently-building`);
+        if(!res.ok) {
+          setStatus(null);
+          return;
+        }
+        const data = await res.json();
+        setStatus(data);
+      } catch(err) {
+        console.error("error fetching build status: ", err);
+        setStatus(null);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    getStatus();
+
+    // refresh hourly
+    const interval = setInterval(getStatus, 1000 * 60 * 60);
+    return () => clearInterval(interval);
+  }, []);
+
+  const isRecentlyActive = status && status.daysAgo <= 3;
+
+
+
+
+
   return (
     <footer className="bg-primary text-primary-foreground py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -12,13 +59,44 @@ const Footer = () => {
               <i>John 8:12 - "No one, sir," she said. Then neither do I condemn you," Jesus declared. "Go now and leave your life of sin"</i>
             </p>
           </div>
-          
+
+
+
+
           <div className="border-t border-primary-foreground/20 pt-8">
-            <p className="text-primary-foreground/60 flex items-center justify-center gap-2">
-              Built with <Heart className="w-4 h-4 text-forest fill-current" /> and curiosity
-            </p>
-            <p className="text-primary-foreground/60 text-sm mt-2">
-              © 2025 Desola Fujah. shhh.
+            {/* Status + Built With Row */}
+            <div className="flex items-center justify-between flex-wrap gap-4">
+              {/* BUILD STATUS (left) */}
+              {isLoading ? (
+                <p className="text-sm text-primary-foreground/60 italic">checking status...</p>
+              ) : isRecentlyActive ? (
+                <a
+                  href={status?.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-3 py-1 rounded-full bg-green-600/10 text-green-500 border border-green-600/30 hover:bg-green-600/20 transition"
+                >
+                  <span className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span>
+                  currently building {status?.repo}
+                </a>
+              ) : (
+                <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-gray-600/10 text-gray-400 border border-gray-600/30">
+                  <span className="w-2.5 h-2.5 rounded-full bg-gray-400"></span>
+                  offline
+                </div>
+              )}
+
+              {/* BUILT WITH (centered horizontally on same line)
+              <div className="flex-1 flex justify-center">
+                <p className="text-primary-foreground/60 flex items-center gap-2">
+                  Built with <Heart className="w-4 h-4 text-forest fill-current" /> and curiosity
+                </p>
+              </div> */}
+            </div>
+
+            {/* COPYRIGHT */}
+            <p className="text-primary-foreground/60 text-sm mt-4 text-center">
+              desola fujah . 2025
             </p>
           </div>
         </div>
