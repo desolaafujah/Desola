@@ -1,9 +1,7 @@
 import { Heart } from "lucide-react";
 import {useEffect, useState} from 'react'
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5020";
-
-const res = await fetch(`${API_BASE}/currently-building`);
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "https://desola.onrender.com";
 
 
 type BuildStatus = {
@@ -42,7 +40,11 @@ const Footer = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const isRecentlyActive = status && status.daysAgo <= 3;
+  const isRecentlyActive = status && status.daysAgo <= 3 && 
+      (() => {
+    const hour = new Date().getHours(); // 0–23
+    return hour >= 6 && hour < 22; // consider daytime as 6AM–10PM
+  })();
 
 
 
@@ -77,7 +79,7 @@ const Footer = () => {
                   className="flex items-center gap-2 px-3 py-1 rounded-full bg-green-600/10 text-green-500 border border-green-600/30 hover:bg-green-600/20 transition"
                 >
                   <span className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span>
-                  currently building {status?.repo}
+                  currently building
                 </a>
               ) : (
                 <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-gray-600/10 text-gray-400 border border-gray-600/30">
