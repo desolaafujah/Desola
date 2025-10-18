@@ -87,13 +87,6 @@ const Footer = () => {
                   offline
                 </div>
               )}
-
-              {/* BUILT WITH (centered horizontally on same line)
-              <div className="flex-1 flex justify-center">
-                <p className="text-primary-foreground/60 flex items-center gap-2">
-                  Built with <Heart className="w-4 h-4 text-forest fill-current" /> and curiosity
-                </p>
-              </div> */}
             </div>
 
             {/* COPYRIGHT */}

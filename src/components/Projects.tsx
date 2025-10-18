@@ -1,6 +1,10 @@
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+
+// TODO: add a design doc part for each project
+// this would help improve my writing
+
 const Projects = () => {
   const projects = [
     {

@@ -35,7 +35,8 @@ const Writing = () => {
           </h2>
           <div className="h-1 w-16 bg-forest mx-auto rounded-full mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            i think a lot so getting into the habit of writing (again) would probably help me
+            i've been exploring unconventional writing styles, mainly because i think this is a space where i can write as honestly and generic as possible.
+            this is helping my brain a lot.
           </p>
         </div>
 
