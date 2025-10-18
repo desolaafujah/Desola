@@ -31,9 +31,14 @@ const Hero = () => {
             <div className="h-1 w-24 bg-forest mx-auto rounded-full"></div>
           </div>
 
-          <p className="text-xl md:text-2xl text-primary-foreground/90 font-light leading-relaxed max-w-2xl mx-auto">
-           coder, writer under construction, and believer.
-          </p>
+          <div className="space-y-3 md:space-y-4 text-center">
+            <p className="text-base md:text-lg text-primary-foreground/80 font-light leading-relaxed md:leading-loose max-w-xl mx-auto tracking-wide">
+              quick intro. i like backend-backend engineering, learning ways to improve developer experience, exploring areas like dependency management and rediscovering ways i can mix the arts and tech in ways that scratch the itch in my brain.
+            </p>
+            <p className="text-base md:text-lg text-primary-foreground/80 font-light leading-relaxed md:leading-loose max-w-xl mx-auto tracking-wide">
+              also, i recently realized how good a cook i am so i’ve been doing that a lot. i love listening to music and playing pool (on my phone and irl). as of late, visiting nyc has become one of my favorite past times.
+            </p>
+          </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button 
@@ -57,12 +62,6 @@ const Hero = () => {
 
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          {/* <button 
-            onClick={scrollToNext}
-            className="animate-bounce text-primary-foreground/70 hover:text-primary-foreground transition-colors duration-300"
-          >
-            <ArrowDown size={32} />
-          </button> */}
         </div>
       </div>
     </section>
@@ -70,9 +69,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-// secret button css
-// variant="outline"
-//               size="lg"
-//               className="border-2 border-cream text-cream hover:bg-cream hover:text-chocolate-dark transition-all duration-300 px-8 py-3"
-//               asChild

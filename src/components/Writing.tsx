@@ -18,7 +18,7 @@ const Writing = () => {
       isNew: false,
     },
     {
-      title: "underneath",
+      title: "deep dive",
       excerpt: "a deep reflection",
       readTime: "30 s read",
       category: "personal",

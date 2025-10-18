@@ -58,13 +58,10 @@ const About = () => {
             <div className="w-12 h-12 bg-gradient-forest rounded-lg flex items-center justify-center mb-6">
               <Layers className="w-6 h-6 text-primary-foreground" />
             </div>
-            <h3 className="text-xl font-semibold text-primary mb-4">storyteller?</h3>
+            <h3 className="text-xl font-semibold text-primary mb-4">unconventional storyteller</h3>
               <p className="text-muted-foreground leading-relaxed">
-                i come from a family of storytellers and writers. it's funny because i never considered myself to be interested in writing or reading. growing up, reading was something i was forced to do and i only wrote when i had to.
-                but one thing i've learned is that growing could involve engaging myself in past hated activities for potentital personal gain. and we all have stories, so i might as well.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                but getting older (and wiser), i've decided to give myself an outlet (apart from God) to properly process my thoughts across many different topics. this actually might be fun.
+                i come from a family of storytellers and writers. it's funny because i never considered myself to be interested in writing or reading. growing up, reading was something i was forced to do and i only wrote when i had to. 
+                and because of that, i get to be unconventional. at the end of the day, we all have stories, so i might as well.
               </p>
           </div>
         </div>
